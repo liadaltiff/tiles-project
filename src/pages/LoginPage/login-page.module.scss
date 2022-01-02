@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.errorText {
+  margin-top: 5rem;
+  color: red;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 30%;
+  height: 60%;
+  background-color: #607998;
+  color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personLogo {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  label {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.emailInput {
+  width: 21rem;
+  height: 2.3rem;
+  background-color: #ecf4ff;
+  border-radius: 0.4rem;
+  border-color: transparent;
+  outline: none;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.buttonContainer {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.passwordInput {
+  width: 21rem;
+  height: 2.3rem;
+  background-color: #ecf4ff;
+  border-radius: 0.4rem;
+  border-color: transparent;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.loginButton {
+  background-color: #ffb085;
+  width: 13rem;
+  height: 3.5rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.signupButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}

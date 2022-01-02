@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wholePage {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  box-sizing: border-box;
+
+  padding-top: 0.7rem;
+  padding-bottom: 1.7rem;
+  background: #ecf4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webpage {
+  height: 80vh;
+  width: 60%;
+  background: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.navigation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  background: #90aacb;
+  border-radius: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.allUsers {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #607998;
+  color: white;
+}
+
+.admins {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.moderators {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.editors {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.viewers {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.contentContainer {
+  flex: 2;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  // height: 90%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex: 1;
+  display: flex;
+  // gap: 5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: #ecf4ff;
+  border-radius: 1rem;
+  text-align: left;
+}

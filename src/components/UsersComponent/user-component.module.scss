@@ -1,0 +1,16 @@
+.showUser {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 0.5rem;
+  gap: 2rem;
+  padding-top: 2rem;
+  //   background-color: #90aacb;
+  justify-content: space-between;
+  width: 100%;
+  // margin: 1rem;
+  // background-color: blue;
+}
+
+// .allUsers {
+//   background-color: blue;
+// }

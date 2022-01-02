@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  background-color: #90aacb;
+  height: 5rem;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.navigating {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+
+.tmp {
+  display: flex;
+  color: white;
+  letter-spacing: 0.05rem;
+  background-color: #90aacb;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  justify-content: end;
+  height: 100%;
+  font-size: 1.2rem;
+  padding: 2rem 2rem;
+}
+
+.ump {
+  display: flex;
+  color: white;
+  letter-spacing: 0.05rem;
+  background-color: #607998;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+  font-size: 1.2rem;
+  padding: 2rem 2rem;
+}
+
+.buttonStyle {
+  display: flex;
+  color: white;
+  letter-spacing: 0.05rem;
+  background-color: #607998;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  justify-content: end;
+  height: 100%;
+  padding-right: 1rem;
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.25rem;
+  margin-right: 1rem;
+}

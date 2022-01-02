@@ -1,0 +1,58 @@
+.addCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #90aacb;
+  border: none;
+  height: 17rem;
+  width: 15rem;
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.plusLogo {
+  width: 8rem;
+  height: 8rem;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #90aacb;
+  border: none;
+  height: 17rem;
+  width: 15rem;
+  border-radius: 0.7rem;
+  justify-self: center;
+
+  box-sizing: border-box;
+}
+
+.colorBtnContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.colorBtn {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.addBtn {
+  background-color: transparent;
+  font-size: 5rem;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}

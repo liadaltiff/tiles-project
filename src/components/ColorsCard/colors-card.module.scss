@@ -1,0 +1,75 @@
+.root {
+  display: flex;
+  justify-self: center;
+  justify-content: space-evenly;
+  background-color: #f9d5a7;
+  border: none;
+  height: 17rem;
+  width: 15rem;
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+}
+
+.footerCardContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.colorBtn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+}
+
+.firstColor {
+  background-color: #ffb085;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+}
+
+.secondColor {
+  background-color: #fef1e6;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+}
+
+.thirdColor {
+  background-color: #e98652;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+}
+
+.deleteButton {
+  background-color: #90aacb;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+}
