@@ -82,7 +82,15 @@ const UsersTable: React.VFC<UsersTableProps> = ({ index }) => {
             <h1>{user.fullName}</h1>
             <h1>{user.email}</h1>
 
-            <NativeSelect onChange={(event) => handleOnChange(event, user._id)}>
+            <NativeSelect
+              style={{
+                color: "#787878",
+                backgroundColor: "#FFFFFF",
+                paddingLeft: 5,
+                width: 130,
+              }}
+              onChange={(event) => handleOnChange(event, user._id)}
+            >
               <ShowRolesOptions currentUser={user} />
             </NativeSelect>
           </div>

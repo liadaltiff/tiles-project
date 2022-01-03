@@ -1,22 +1,30 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../UserContext";
 import classes from "./header.module.scss";
+import { faUserCog } from "@fortawesome/free-solid-svg-icons";
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faClone } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const { loggedInUser, setLoggedInUser } = useContext(UserContext);
   setLoggedInUser(loggedInUser);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const LogOut = () => {
     setLoggedInUser(undefined);
     navigate("/login");
   };
+
   return (
     <nav className={classes.navbar}>
       <button onClick={LogOut} className={classes.buttonStyle}>
         <div className={classes.userContainer}>
-          <img className={classes.logo} src="assets/profile.png" />
+          <div className={classes.logo}>
+            <FontAwesomeIcon icon={faUserCircle} />
+          </div>
           <div className={classes.textContainer}>
             <h2>{loggedInUser?.fullName}</h2>
             <h3>{loggedInUser?.role}</h3>
@@ -26,10 +34,10 @@ const Header = () => {
       {loggedInUser?.role === "Admin" && (
         <div className={classes.navigating}>
           <button className={classes.tmp} onClick={() => navigate(`/home`)}>
-            TMP
+            <FontAwesomeIcon icon={faUserCog} />
           </button>
           <button className={classes.ump} onClick={() => navigate(`/admin`)}>
-            UMP
+            <FontAwesomeIcon icon={faClone} />
           </button>
         </div>
       )}

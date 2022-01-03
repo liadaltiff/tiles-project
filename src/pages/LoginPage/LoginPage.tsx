@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import classes from "./login-page.module.scss";
 import { UserContext } from "../../UserContext";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 
 const ErrorText = () => {
   return <h2 className={classes.errorText}>Email Or Password Are Incorrect</h2>;
@@ -47,7 +49,9 @@ const LoginPage: FC = () => {
     <div className={classes.root}>
       <div className={classes.card}>
         <div className={classes.logo}>
-          <img src="assets/profile.png" className={classes.personLogo}></img>
+          <div className={classes.personLogo}>
+            <FontAwesomeIcon icon={faUserCircle} />
+          </div>
         </div>
         <form>
           <div className={classes.inputContainer}>

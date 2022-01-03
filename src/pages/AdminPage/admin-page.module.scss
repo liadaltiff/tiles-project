@@ -5,7 +5,10 @@
 }
 
 .wholePage {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
   height: 100%;
 }
 
@@ -21,21 +24,21 @@
 }
 
 .webpage {
-  height: 80vh;
-  width: 60%;
+  height: 70vh;
+  width: 90%;
   background: #ffffff;
   border-radius: 1rem;
   display: flex;
 }
 
 .navigation {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: center;
   background: #90aacb;
   border-radius: 1rem;
+  width: 20%;
 }
 
 .links {
@@ -47,45 +50,12 @@
   padding-left: 2rem;
 }
 
-.allUsers {
+.roleOptions {
   background-color: transparent;
   border: none;
   cursor: pointer;
   font-size: 2.5rem;
-  color: #607998;
-  color: white;
-}
-
-.admins {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 2.5rem;
-  color: white;
-}
-
-.moderators {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 2.5rem;
-  color: white;
-}
-
-.editors {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 2.5rem;
-  color: white;
-}
-
-.viewers {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 2.5rem;
-  color: white;
+  color: #ecf4ff;
 }
 
 .contentContainer {
@@ -96,17 +66,27 @@
 }
 
 .content {
-  // height: 90%;
+  display: flex;
+  height: 100%;
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  flex: 1;
-  display: flex;
-  // gap: 5rem;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   background: #ecf4ff;
   border-radius: 1rem;
   text-align: left;
+}
+
+.contentContainer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.selected {
+  color: #607998;
+  border-bottom: 0.15rem solid #ecf4ff;
 }

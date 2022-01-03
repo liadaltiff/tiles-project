@@ -1,3 +1,5 @@
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import { FC, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
@@ -45,7 +47,9 @@ const SignUpPage: FC = () => {
     <div className={classes.root}>
       <div className={classes.card}>
         <div className={classes.logo}>
-          <img src="assets/profile.png" className={classes.personLogo}></img>
+          <div className={classes.personLogo}>
+            <FontAwesomeIcon icon={faUserCircle} />
+          </div>
         </div>
         <form>
           <div className={classes.inputContainer}>
