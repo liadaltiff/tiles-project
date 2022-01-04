@@ -86,6 +86,9 @@ const Footer = () => {
       const result = await res.json();
       const tiles = result.tiles as Tile[];
       setStateTiles(tiles);
+      setAddedTiles([]);
+      setUpdatedTiles([]);
+      setDeletedTiles([]);
     } catch (error) {}
   }, []);
 
